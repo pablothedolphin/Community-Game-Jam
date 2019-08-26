@@ -7,5 +7,5 @@ public class Question : ScriptableObject
 {
     public Tag tag;
 
-    public Statement[] responses;
+    public List<Statement> responses;
 }

@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
-  m_Name: I'm vegan
+  m_Name: I'm the youngest of 5 boys
   m_EditorClassIdentifier: 
   impressiveness: 0
-  tags:
-  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
-  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
+  tags: []
   contradictiveStatements: []
   supportingStatements: []

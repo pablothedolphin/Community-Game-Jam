@@ -7,10 +7,10 @@ public class Statement : ScriptableObject
 {
     public int impressiveness;
 
-    public Tag[] tags;
+    public List<Tag> tags;
 
-    public Statement[] contradictiveStatements;
-    public Statement[] supportingStatements;
+    public List<Statement> contradictiveStatements;
+    public List<Statement> supportingStatements;
 
 
 }
