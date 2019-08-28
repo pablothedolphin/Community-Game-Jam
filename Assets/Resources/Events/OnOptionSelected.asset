@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
-  m_Name: Chocolate is the one thing I can't say no to
+  m_Script: {fileID: 11500000, guid: 88162ea68b75a3d40bdbe82cdd129d16, type: 3}
+  m_Name: OnOptionSelected
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  description: Raised by the ui objects that are instantiated in the scene when clicked
+    on.
+  valueForManualTrigger: 0
+  listenerNames: []
