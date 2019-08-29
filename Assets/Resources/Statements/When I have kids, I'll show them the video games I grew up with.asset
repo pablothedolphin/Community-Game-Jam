@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
-  m_Name: I was ALWAYS picked last for sports
+  m_Name: When I have kids, I'll show them the video games I grew up with
   m_EditorClassIdentifier: 
   impressiveness: 0
-  tags: []
+  likedBy: []
+  dislikedBy: []
   contradictiveStatements: []
-  supportingStatements: []

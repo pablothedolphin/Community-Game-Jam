@@ -2,12 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using ScriptableFramework;
 
 public class StatementGenerator : MonoBehaviour
 {
 	public Transform optionsRoot;
 	public Transform usedOptionsRoot;
 	public StatementUI statementUIPrefab;
+
+	public AppEvent onContradiction;
+	public AppEvent onDislike;
+	public AppEvent onLike;
+
+	public Tag[] allTypeAs;
+	public Tag[] allTypeBs;
+
+	private Tag typeA;
+	private Tag typeB;
+
+	public Image timerImage;
+	[Range (3, 10)] public float timerLength;
 
     List<Statement> allStatements;
     List<Statement> usedStatements;
@@ -17,22 +31,42 @@ public class StatementGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        usedStatements = new List<Statement> ();
+		typeA = allTypeAs[Random.Range (0, allTypeAs.Length)];
+		typeB = allTypeBs[Random.Range (0, allTypeBs.Length)];
+
+		usedStatements = new List<Statement> ();
         allStatements = new List<Statement> (Resources.LoadAll<Statement> ("/"));
 
 		ResetOptions ();
+	}
 
+	private IEnumerator CountDownTime ()
+	{
+		float timeElapsed = 0;
+
+		while (timeElapsed < timerLength)
+		{
+			timeElapsed += Time.deltaTime;
+			timerImage.fillAmount = 1 - (timeElapsed / timerLength);
+
+			yield return null;
+		}
+
+		// reduce score
+
+		ResetOptions ();
 	}
 
 	public void ResetOptions ()
 	{
+		StartCoroutine (CountDownTime ());
 		optionsRoot.DestroyChildren ();
 		GenerateSetOfFour ();
 	}
 
 	public void GenerateSetOfFour ()
     {
-		if (allStatements.Count < 5) return;
+		if (allStatements.Count < 4) return;
 
         List<int> randomIndecies = new List<int> ();
 
@@ -66,8 +100,7 @@ public class StatementGenerator : MonoBehaviour
     {
         allStatements.Remove (statementOptions[index]);
 
-        if (DoesStatementContradict (statementOptions[index])) Debug.Log ("oops");
-        else Debug.Log ("phew!");
+		AssessResponse (statementOptions[index]);
 
 		Transform selectedOption = optionsRoot.GetChild (index);
 
@@ -76,21 +109,42 @@ public class StatementGenerator : MonoBehaviour
 
         usedStatements.Add (statementOptions[index]);
 
+		StopAllCoroutines ();
 		ResetOptions ();
     }
+
+	private void AssessResponse (Statement statement)
+	{
+		if (DoesStatementContradict (statement)) Debug.Log ("oops");
+		if (IsStatementDisliked (statement)) Debug.Log ("oh noes");
+		if (IsStatementLiked (statement)) Debug.Log ("yay");
+	}
 
     private bool DoesStatementContradict (Statement statement)
     {
         for (int i = 0; i < usedStatements.Count; i++)
         {
-            for (int j = 0; j < usedStatements[i].contradictiveStatements.Count; j++)
-            {
-                if (usedStatements[i].contradictiveStatements.Contains (statement)) return true;
-            }
+            if (usedStatements[i].contradictiveStatements.Contains (statement)) return true;
         }
 
         return false;
     }
+
+	private bool IsStatementDisliked (Statement statement)
+	{
+		if (statement.dislikedBy.Contains (typeA)) return true;
+		if (statement.dislikedBy.Contains (typeB)) return true;
+
+		return false;
+	}
+
+	private bool IsStatementLiked (Statement statement)
+	{
+		if (statement.likedBy.Contains (typeA)) return true;
+		if (statement.likedBy.Contains (typeB)) return true;
+
+		return false;
+	}
 }
 
 public static class Extensions

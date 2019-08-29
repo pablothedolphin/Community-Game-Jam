@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: Children are the bane of my existence
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
+  likedBy: []
+  dislikedBy:
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
   contradictiveStatements:
-  - {fileID: 0}
-  supportingStatements: []
+  - {fileID: 11400000, guid: f6b8c9e49daaffc46a80b338b5212b85, type: 2}
+  - {fileID: 11400000, guid: 43218714004ed224da871d8adc9448b1, type: 2}
+  - {fileID: 11400000, guid: ba4ccc09b1d184942bf05ced91385019, type: 2}
