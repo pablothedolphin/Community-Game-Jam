@@ -5,22 +5,35 @@ using UnityEngine.UI;
 
 public class StatementGenerator : MonoBehaviour
 {
-    public StatementUI statementUI;
+	public Transform optionsRoot;
+	public Transform usedOptionsRoot;
+	public StatementUI statementUIPrefab;
 
     List<Statement> allStatements;
     List<Statement> usedStatements;
 
-    Statement[] shownStatements;
+    Statement[] statementOptions;
 
     // Start is called before the first frame update
     void Start()
     {
         usedStatements = new List<Statement> ();
-        allStatements = new List<Statement> (Resources.LoadAll<Statement> ("/Statements/"));
-    }
+        allStatements = new List<Statement> (Resources.LoadAll<Statement> ("/"));
 
-    public void GenerateSetOfFour ()
+		ResetOptions ();
+
+	}
+
+	public void ResetOptions ()
+	{
+		optionsRoot.DestroyChildren ();
+		GenerateSetOfFour ();
+	}
+
+	public void GenerateSetOfFour ()
     {
+		if (allStatements.Count < 5) return;
+
         List<int> randomIndecies = new List<int> ();
 
         while (randomIndecies.Count < 4)
@@ -31,22 +44,39 @@ public class StatementGenerator : MonoBehaviour
                 randomIndecies.Add (index);
         }
 
-        shownStatements = new Statement[4];
+        statementOptions = new Statement[4];
 
-        shownStatements[0] = allStatements[randomIndecies[0]];
-        shownStatements[1] = allStatements[randomIndecies[1]];
-        shownStatements[2] = allStatements[randomIndecies[2]];
-        shownStatements[3] = allStatements[randomIndecies[3]];
+        statementOptions[0] = allStatements[randomIndecies[0]];
+        statementOptions[1] = allStatements[randomIndecies[1]];
+        statementOptions[2] = allStatements[randomIndecies[2]];
+        statementOptions[3] = allStatements[randomIndecies[3]];
+
+		PresentOptions ();
     }
 
-    public void SelectStatement (int index)
-    {
-        allStatements.Remove (shownStatements[index]);
+	private void PresentOptions ()
+	{
+		for (int i = 0; i < statementOptions.Length; i++)
+		{
+			Instantiate<StatementUI> (statementUIPrefab, optionsRoot).Initialise (statementOptions[i]);
+		}
+	}
 
-        if (DoesStatementContradict (shownStatements[index])) Debug.Log ("oops");
+	public void SelectStatement (int index)
+    {
+        allStatements.Remove (statementOptions[index]);
+
+        if (DoesStatementContradict (statementOptions[index])) Debug.Log ("oops");
         else Debug.Log ("phew!");
 
-        usedStatements.Add (shownStatements[index]);
+		Transform selectedOption = optionsRoot.GetChild (index);
+
+		selectedOption.SetParent (usedOptionsRoot);
+		selectedOption.SetSiblingIndex (0);
+
+        usedStatements.Add (statementOptions[index]);
+
+		ResetOptions ();
     }
 
     private bool DoesStatementContradict (Statement statement)
@@ -61,4 +91,23 @@ public class StatementGenerator : MonoBehaviour
 
         return false;
     }
+}
+
+public static class Extensions
+{
+	public static void DestroyChildren (this Transform transform)
+	{
+		for (int i = transform.childCount - 1; i >= 0; i--)
+		{
+			Object.Destroy (transform.GetChild (i).gameObject);
+		}
+	}
+
+	public static void DestroyChildren (this GameObject gameObject)
+	{
+		for (int i = gameObject.transform.childCount - 1; i >= 0; i--)
+		{
+			Object.Destroy (gameObject.transform.GetChild (i).gameObject);
+		}
+	}
 }

@@ -3,20 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using ScriptableFramework;
 
 public class StatementUI : MonoBehaviour
 {
-    Animator anim;
-    private TextMeshProUGUI statementText;
+    [SerializeField] private TextMeshProUGUI statementText;
+    [SerializeField] private IntEvent onOptionSelected;
+	Animator anim;
+	Image background;
+	Button button;
 
-    // Start is called before the first frame update
-    public void Initialise (Statement statement)
+	// Start is called before the first frame update
+	public void Initialise (Statement statement)
     {
         statementText.text = statement.name;
-    }
+		background = GetComponent<Image> ();
+		button = GetComponent<Button> ();
+	}
 
     public void Select ()
     {
+		button.interactable = false;
+		onOptionSelected.RaiseEvent (transform.GetSiblingIndex ());
         // float around
         // change appearance
     }
@@ -36,6 +44,7 @@ public class StatementUI : MonoBehaviour
 
     private void Contradicted ()
     {
-        // change appearance
+		// change appearance
+		background.color = Color.red;
     }
 }
