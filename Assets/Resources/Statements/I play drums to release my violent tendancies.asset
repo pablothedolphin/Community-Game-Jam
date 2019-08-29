@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
-  m_Name: I go to the opera every now and then
+  m_Name: I play drums to release my violent tendancies
   m_EditorClassIdentifier: 
   impressiveness: 0
   tags: []

@@ -18,10 +18,12 @@ public class StatementUI : MonoBehaviour
     {
         statementText.text = statement.name;
 		background = GetComponent<Image> ();
-    }
+		button = GetComponent<Button> ();
+	}
 
     public void Select ()
     {
+		button.interactable = false;
 		onOptionSelected.RaiseEvent (transform.GetSiblingIndex ());
         // float around
         // change appearance

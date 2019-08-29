@@ -69,7 +69,10 @@ public class StatementGenerator : MonoBehaviour
         if (DoesStatementContradict (statementOptions[index])) Debug.Log ("oops");
         else Debug.Log ("phew!");
 
-		optionsRoot.GetChild (index).SetParent (usedOptionsRoot);
+		Transform selectedOption = optionsRoot.GetChild (index);
+
+		selectedOption.SetParent (usedOptionsRoot);
+		selectedOption.SetSiblingIndex (0);
 
         usedStatements.Add (statementOptions[index]);
 
