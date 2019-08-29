@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: Global warming needs to be taken way more seriously
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  likedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: 9e0e273070dcd204ba089773a459147c, type: 2}
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
   dislikedBy: []
-  contradictiveStatements: []
+  contradictiveStatements:
+  - {fileID: 11400000, guid: 46faad1685ca3844888152d10659df6d, type: 2}

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I can't wait for Mincraft 2 to come out
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy:
+  - {fileID: 11400000, guid: 4a92f82d2d482994aa903ff822c52cc7, type: 2}
+  dislikedBy: []
+  contradictiveStatements:
+  - {fileID: 11400000, guid: d8686412a7a406c49a0f323ebdba4556, type: 2}
+  - {fileID: 11400000, guid: cdf7df8ab746ef04586e1a37b5ff0b2b, type: 2}

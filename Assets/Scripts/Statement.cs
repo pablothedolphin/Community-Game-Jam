@@ -5,8 +5,6 @@ using UnityEngine;
 [CreateAssetMenu (menuName = "Game/Statement")]
 public class Statement : ScriptableObject
 {
-    public int impressiveness;
-
     public List<Tag> likedBy;
     public List<Tag> dislikedBy;
 

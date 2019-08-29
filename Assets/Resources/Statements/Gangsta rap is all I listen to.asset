@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: Gangsta rap is all I listen to
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy:
+  - {fileID: 11400000, guid: 70968e4cc5681084e9f96b5839b847d0, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
+  contradictiveStatements:
+  - {fileID: 11400000, guid: 53cc399d72403ac46a54c3584dd1d02c, type: 2}
