@@ -9,6 +9,9 @@ public class StatementGenerator : MonoBehaviour
 	public Transform usedOptionsRoot;
 	public StatementUI statementUIPrefab;
 
+	public Image timerImage;
+	[Range (3, 10)] public float timerLength;
+
     List<Statement> allStatements;
     List<Statement> usedStatements;
 
@@ -21,18 +24,35 @@ public class StatementGenerator : MonoBehaviour
         allStatements = new List<Statement> (Resources.LoadAll<Statement> ("/"));
 
 		ResetOptions ();
+	}
 
+	private IEnumerator CountDownTime ()
+	{
+		float timeElapsed = 0;
+
+		while (timeElapsed < timerLength)
+		{
+			timeElapsed += Time.deltaTime;
+			timerImage.fillAmount = 1 - (timeElapsed / timerLength);
+
+			yield return null;
+		}
+
+		// reduce score
+
+		ResetOptions ();
 	}
 
 	public void ResetOptions ()
 	{
+		StartCoroutine (CountDownTime ());
 		optionsRoot.DestroyChildren ();
 		GenerateSetOfFour ();
 	}
 
 	public void GenerateSetOfFour ()
     {
-		if (allStatements.Count < 5) return;
+		if (allStatements.Count < 4) return;
 
         List<int> randomIndecies = new List<int> ();
 
@@ -76,6 +96,7 @@ public class StatementGenerator : MonoBehaviour
 
         usedStatements.Add (statementOptions[index]);
 
+		StopAllCoroutines ();
 		ResetOptions ();
     }
 
