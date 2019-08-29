@@ -247,8 +247,18 @@ MonoBehaviour:
   onContradiction: {fileID: 0}
   onDislike: {fileID: 0}
   onLike: {fileID: 0}
-  allTypeAs: []
-  allTypeBs: []
+  allTypeAs:
+  - {fileID: 11400000, guid: f29fe3652e90a0d4fbceda132767c16c, type: 2}
+  - {fileID: 11400000, guid: 8891dc5a059a8b54da5edeb2eacf90cb, type: 2}
+  - {fileID: 11400000, guid: 4a92f82d2d482994aa903ff822c52cc7, type: 2}
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
+  - {fileID: 11400000, guid: 70968e4cc5681084e9f96b5839b847d0, type: 2}
+  allTypeBs:
+  - {fileID: 11400000, guid: 9e0e273070dcd204ba089773a459147c, type: 2}
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
+  - {fileID: 11400000, guid: 64671e6cec02789469fca257ec44eabd, type: 2}
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
+  - {fileID: 11400000, guid: 537253dfd78ae2c42ab365b5fe3f8b15, type: 2}
   timerImage: {fileID: 2072427558}
   timerLength: 5
 --- !u!114 &126904955
@@ -386,7 +396,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1076424214}
   m_HandleRect: {fileID: 1076424213}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -969,7 +979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 299355708}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -1258,7 +1268,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 671824395}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 0.9999999
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

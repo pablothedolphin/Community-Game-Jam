@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I drive a Tesla because of how rich I am
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy:
+  - {fileID: 11400000, guid: 64671e6cec02789469fca257ec44eabd, type: 2}
+  - {fileID: 11400000, guid: 9e0e273070dcd204ba089773a459147c, type: 2}
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
+  contradictiveStatements:
+  - {fileID: 11400000, guid: ec5efe58f42184d49b439c115c76eaf2, type: 2}
+  - {fileID: 11400000, guid: 5bffd5a4dbce53a4f8b6900a9b5d5ab0, type: 2}
+  - {fileID: 11400000, guid: 43218714004ed224da871d8adc9448b1, type: 2}
+  - {fileID: 11400000, guid: 8997a867bf08700449ddf8bd740222a1, type: 2}

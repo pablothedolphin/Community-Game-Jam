@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I don't like sand, it's coarse and rough and gets everywhere
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy: []
+  dislikedBy: []
+  contradictiveStatements:
+  - {fileID: 11400000, guid: d13f0d8f6b776484e963a33d313a8256, type: 2}
+  - {fileID: 11400000, guid: bf3a02c0a932aaa40bf8d485876e69dd, type: 2}
