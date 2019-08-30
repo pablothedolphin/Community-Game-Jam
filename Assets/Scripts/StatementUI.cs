@@ -9,6 +9,10 @@ public class StatementUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI statementText;
     [SerializeField] private IntEvent onOptionSelected;
+    [SerializeField] private Sprite heart;
+    [SerializeField] private Sprite questionMark;
+    [SerializeField] private Sprite anger;
+	[SerializeField] private Image responseIcon;
 	Animator anim;
 	Image background;
 	Button button;
@@ -29,22 +33,27 @@ public class StatementUI : MonoBehaviour
         // change appearance
     }
 
-    public void Contradicted_Used ()
-    {
-        // stop floating around
-        Contradicted ();
-        // float up to a given point
-    }
-
-    public void Contradicted_Selected ()
-    {
-        Contradicted ();
-        // float up to a given point
-    }
-
-    private void Contradicted ()
+    public void Contradicted ()
     {
 		// change appearance
 		background.color = Color.red;
-    }
+
+		responseIcon.sprite = questionMark;
+	}
+
+	public void Disliked ()
+	{
+		// change appearance
+		background.color = Color.red;
+
+		responseIcon.sprite = anger;
+
+	}
+
+	public void Liked ()
+	{
+		// change appearance
+		background.color = Color.green;
+		responseIcon.sprite = heart;
+	}
 }

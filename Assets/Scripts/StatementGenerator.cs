@@ -30,6 +30,7 @@ public class StatementGenerator : MonoBehaviour
     List<Statement> usedStatements;
 
     Statement[] statementOptions;
+	StatementUI[] statementButtons;
 
     // Start is called before the first frame update
     void Start()
@@ -100,9 +101,12 @@ public class StatementGenerator : MonoBehaviour
 
 	private void PresentOptions ()
 	{
+		statementButtons = new StatementUI[4];
+
 		for (int i = 0; i < statementOptions.Length; i++)
-		{
-			Instantiate<StatementUI> (statementUIPrefab, optionsRoot).Initialise (statementOptions[i]);
+		{ 
+			statementButtons[i] = Instantiate<StatementUI> (statementUIPrefab, optionsRoot);
+			statementButtons[i].Initialise (statementOptions[i]);
 		}
 	}
 
@@ -110,7 +114,7 @@ public class StatementGenerator : MonoBehaviour
     {
         allStatements.Remove (statementOptions[index]);
 
-		AssessResponse (statementOptions[index]);
+		AssessResponse (statementOptions[index], index);
 
 		Transform selectedOption = optionsRoot.GetChild (index);
 
@@ -123,11 +127,14 @@ public class StatementGenerator : MonoBehaviour
 		ResetOptions ();
     }
 
-	private void AssessResponse (Statement statement)
+	private void AssessResponse (Statement statement, int index)
 	{
 		if (DoesStatementContradict (statement))
 		{
 			UpdateScore (-1);
+
+			statementButtons[index].Contradicted ();
+
 			Debug.Log ("oops");
 			return;
 		}
@@ -135,6 +142,7 @@ public class StatementGenerator : MonoBehaviour
 		if (IsStatementDisliked (statement))
 		{
 			UpdateScore (-1);
+			statementButtons[index].Disliked ();
 			Debug.Log ("oh noes");
 			return;
 		}
@@ -142,6 +150,7 @@ public class StatementGenerator : MonoBehaviour
 		if (IsStatementLiked (statement))
 		{
 			UpdateScore (1);
+			statementButtons[index].Liked ();
 			Debug.Log ("yay");
 			return;
 		}
