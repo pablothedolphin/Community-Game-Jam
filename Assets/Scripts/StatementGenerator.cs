@@ -23,6 +23,9 @@ public class StatementGenerator : MonoBehaviour
 	public Image timerImage;
 	[Range (3, 10)] public float timerLength;
 
+	public Image loveBar;
+	public Animator loveHeart;
+
     List<Statement> allStatements;
     List<Statement> usedStatements;
 
@@ -37,7 +40,7 @@ public class StatementGenerator : MonoBehaviour
 		usedStatements = new List<Statement> ();
         allStatements = new List<Statement> (Resources.LoadAll<Statement> ("/"));
 
-		ResetOptions ();
+		Debug.Log ("She is a: " + typeA.name + " " + typeB.name);
 	}
 
 	private IEnumerator CountDownTime ()
@@ -52,7 +55,7 @@ public class StatementGenerator : MonoBehaviour
 			yield return null;
 		}
 
-		// reduce score
+		UpdateScore (-1);
 
 		ResetOptions ();
 	}
@@ -66,7 +69,14 @@ public class StatementGenerator : MonoBehaviour
 
 	public void GenerateSetOfFour ()
     {
-		if (allStatements.Count < 4) return;
+		if (allStatements.Count < 4)
+		{
+			StopAllCoroutines ();
+
+			// lose
+
+			return;
+		}
 
         List<int> randomIndecies = new List<int> ();
 
@@ -115,9 +125,28 @@ public class StatementGenerator : MonoBehaviour
 
 	private void AssessResponse (Statement statement)
 	{
-		if (DoesStatementContradict (statement)) Debug.Log ("oops");
-		if (IsStatementDisliked (statement)) Debug.Log ("oh noes");
-		if (IsStatementLiked (statement)) Debug.Log ("yay");
+		if (DoesStatementContradict (statement))
+		{
+			UpdateScore (-1);
+			Debug.Log ("oops");
+			return;
+		}
+
+		if (IsStatementDisliked (statement))
+		{
+			UpdateScore (-1);
+			Debug.Log ("oh noes");
+			return;
+		}
+
+		if (IsStatementLiked (statement))
+		{
+			UpdateScore (1);
+			Debug.Log ("yay");
+			return;
+		}
+
+		Debug.Log ("oh okay");
 	}
 
     private bool DoesStatementContradict (Statement statement)
@@ -144,6 +173,29 @@ public class StatementGenerator : MonoBehaviour
 		if (statement.likedBy.Contains (typeB)) return true;
 
 		return false;
+	}
+
+	private void UpdateScore (int direction)
+	{
+		loveBar.fillAmount += 0.1f * direction;
+		loveHeart.SetFloat ("Speed", loveHeart.GetFloat ("Speed") + (0.1f * direction));
+
+		CheckWinLoseState ();
+	}
+
+	private void CheckWinLoseState ()
+	{
+
+		if (loveBar.fillAmount >= 1)
+		{
+			StopAllCoroutines ();
+			// win
+		}
+		else if (loveBar.fillAmount <= 0)
+		{
+			StopAllCoroutines ();
+			// lose
+		}
 	}
 }
 
