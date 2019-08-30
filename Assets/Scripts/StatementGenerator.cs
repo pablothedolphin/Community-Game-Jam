@@ -33,7 +33,7 @@ public class StatementGenerator : MonoBehaviour
 	public Animator loveHeart;
 	public Transform timeLossPrefab;
 
-    List<Statement> allStatements;
+	List<Statement> allStatements;
     List<Statement> usedStatements;
 
     Statement[] statementOptions;
