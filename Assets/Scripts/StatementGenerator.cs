@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using ScriptableFramework;
+using TMPro;
 
 public class StatementGenerator : MonoBehaviour
 {
@@ -13,9 +14,14 @@ public class StatementGenerator : MonoBehaviour
 	public AppEvent onContradiction;
 	public AppEvent onDislike;
 	public AppEvent onLike;
+	public AppEvent onTimeTooLong;
 
 	public Tag[] allTypeAs;
 	public Tag[] allTypeBs;
+
+	public string[] names;
+	public TextMeshProUGUI nameLabel;
+	public TextMeshProUGUI typeLabel;
 
 	private Tag typeA;
 	private Tag typeB;
@@ -42,7 +48,8 @@ public class StatementGenerator : MonoBehaviour
 		usedStatements = new List<Statement> ();
         allStatements = new List<Statement> (Resources.LoadAll<Statement> ("/"));
 
-		Debug.Log ("She is a: " + typeA.name + " " + typeB.name);
+		nameLabel.text = names[Random.Range (0, names.Length)];
+		typeLabel.text = typeA.name + " " + typeB.name;
 	}
 
 	private IEnumerator CountDownTime ()
@@ -61,6 +68,8 @@ public class StatementGenerator : MonoBehaviour
 
 		Transform timeLossInstance = Instantiate (timeLossPrefab, usedOptionsRoot);
 		timeLossInstance.SetSiblingIndex (0);
+
+		onTimeTooLong.RaiseEvent ();
 
 		ResetOptions ();
 	}

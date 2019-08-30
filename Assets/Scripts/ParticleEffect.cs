@@ -36,4 +36,10 @@ public class ParticleEffect : MonoBehaviour
 		Destroy (Instantiate (questionMark), 4);
 		source.PlayOneShot (contradict);
 	}
+
+	public void TimeTooLong ()
+	{
+		source.PlayOneShot (contradict);
+
+	}
 }
