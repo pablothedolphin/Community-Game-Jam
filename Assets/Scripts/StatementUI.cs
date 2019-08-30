@@ -39,6 +39,7 @@ public class StatementUI : MonoBehaviour
 		background.color = Color.red;
 
 		responseIcon.sprite = questionMark;
+		responseIcon.color = Color.white;
 	}
 
 	public void Disliked ()
@@ -46,6 +47,7 @@ public class StatementUI : MonoBehaviour
 		// change appearance
 		background.color = Color.red;
 
+		responseIcon.color = Color.white;
 		responseIcon.sprite = anger;
 
 	}
@@ -54,6 +56,7 @@ public class StatementUI : MonoBehaviour
 	{
 		// change appearance
 		background.color = Color.green;
+		responseIcon.color = Color.white;
 		responseIcon.sprite = heart;
 	}
 }

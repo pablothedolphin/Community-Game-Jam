@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I hate the country I'm more of a city boi
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy:
+  - {fileID: 11400000, guid: 64671e6cec02789469fca257ec44eabd, type: 2}
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: f29fe3652e90a0d4fbceda132767c16c, type: 2}
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
+  - {fileID: 11400000, guid: 64671e6cec02789469fca257ec44eabd, type: 2}
+  contradictiveStatements:
+  - {fileID: 11400000, guid: 5bffd5a4dbce53a4f8b6900a9b5d5ab0, type: 2}
+  - {fileID: 11400000, guid: bbedb52dd3b80024dbba9bf6d7d104c1, type: 2}

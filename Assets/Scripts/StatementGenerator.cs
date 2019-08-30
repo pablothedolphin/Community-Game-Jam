@@ -25,6 +25,7 @@ public class StatementGenerator : MonoBehaviour
 
 	public Image loveBar;
 	public Animator loveHeart;
+	public Transform timeLossPrefab;
 
     List<Statement> allStatements;
     List<Statement> usedStatements;
@@ -57,6 +58,9 @@ public class StatementGenerator : MonoBehaviour
 		}
 
 		UpdateScore (-1);
+
+		Transform timeLossInstance = Instantiate (timeLossPrefab, usedOptionsRoot);
+		timeLossInstance.SetSiblingIndex (0);
 
 		ResetOptions ();
 	}
@@ -135,7 +139,7 @@ public class StatementGenerator : MonoBehaviour
 
 			statementButtons[index].Contradicted ();
 
-			Debug.Log ("oops");
+			onContradiction.RaiseEvent ();
 			return;
 		}
 
@@ -143,7 +147,8 @@ public class StatementGenerator : MonoBehaviour
 		{
 			UpdateScore (-1);
 			statementButtons[index].Disliked ();
-			Debug.Log ("oh noes");
+			onDislike.RaiseEvent ();
+
 			return;
 		}
 
@@ -151,11 +156,10 @@ public class StatementGenerator : MonoBehaviour
 		{
 			UpdateScore (1);
 			statementButtons[index].Liked ();
-			Debug.Log ("yay");
+			onLike.RaiseEvent ();
+
 			return;
 		}
-
-		Debug.Log ("oh okay");
 	}
 
     private bool DoesStatementContradict (Statement statement)
