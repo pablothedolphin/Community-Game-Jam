@@ -21,6 +21,7 @@ public class Extensions
 				{
 					if (!allStatements[j].contradictiveStatements.Contains (allStatements[i]))
 					{
+						EditorUtility.SetDirty (allStatements[j]);
 						allStatements[j].contradictiveStatements.Add (allStatements[i]);
 						additions++;
 					}

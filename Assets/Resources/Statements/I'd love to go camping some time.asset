@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I'd love to go camping some time
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy: []
+  dislikedBy: []
+  contradictiveStatements:
+  - {fileID: 11400000, guid: fcff1dbcbecee2745934e3e9f5afff5f, type: 2}
+  - {fileID: 11400000, guid: e941e0df554f77a4f8baf69124636e68, type: 2}
+  - {fileID: 11400000, guid: 0683dbf5ec56b5f48b7aee08ce8a3e3b, type: 2}

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   likedBy: []
   dislikedBy: []
-  contradictiveStatements: []
+  contradictiveStatements:
+  - {fileID: 11400000, guid: 37aff9454b0b7cb40b112cda5193e8db, type: 2}

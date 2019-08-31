@@ -19,3 +19,6 @@ MonoBehaviour:
   contradictiveStatements:
   - {fileID: 11400000, guid: 1036056d355e5d54583f86e3fdbf20b2, type: 2}
   - {fileID: 11400000, guid: 9ef96679e2f2db8428c68f7f726c2012, type: 2}
+  - {fileID: 11400000, guid: 0d794557c056e3647896b9d4135b6349, type: 2}
+  - {fileID: 11400000, guid: a3c682e44b5c64a4f88de9cbbb2e0c97, type: 2}
+  - {fileID: 11400000, guid: f32d56232a7c34a4ebfe8d80f8523c5e, type: 2}
