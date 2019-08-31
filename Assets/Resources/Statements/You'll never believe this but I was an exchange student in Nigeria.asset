@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: You'll never believe this but I was an exchange student in Nigeria
   m_EditorClassIdentifier: 
-  likedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: f29fe3652e90a0d4fbceda132767c16c, type: 2}
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
   dislikedBy: []
   contradictiveStatements:
   - {fileID: 11400000, guid: 0683dbf5ec56b5f48b7aee08ce8a3e3b, type: 2}

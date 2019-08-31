@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I'm allergic to all animals except Humans
   m_EditorClassIdentifier: 
-  likedBy: []
-  dislikedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: 37aff9454b0b7cb40b112cda5193e8db, type: 2}
+  - {fileID: 11400000, guid: 61df2bbb05149e640857cc98fdbb0831, type: 2}

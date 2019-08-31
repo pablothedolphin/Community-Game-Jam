@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: In the words of Stevie Wonder 'Superstition ain't the way'
   m_EditorClassIdentifier: 
-  likedBy: []
-  dislikedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
+  - {fileID: 11400000, guid: 4a92f82d2d482994aa903ff822c52cc7, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
+  - {fileID: 11400000, guid: 70968e4cc5681084e9f96b5839b847d0, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: ac2e7281b3fb4054fa503cdcce4718be, type: 2}
+  - {fileID: 11400000, guid: 24f27d3da9fec6b4eb679f56f36aac8a, type: 2}
+  - {fileID: 11400000, guid: cebf29781b2ce7a4792e4c30e1ed4ced, type: 2}

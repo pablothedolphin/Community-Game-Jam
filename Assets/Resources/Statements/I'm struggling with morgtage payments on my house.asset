@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: I'm struggling with morgtage payments on my house
   m_EditorClassIdentifier: 
   likedBy: []
-  dislikedBy: []
+  dislikedBy:
+  - {fileID: 11400000, guid: 64671e6cec02789469fca257ec44eabd, type: 2}
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: 7a6bc4bb94c372d4a96fac3f4c7c70e4, type: 2}
   - {fileID: 11400000, guid: 6f075c6f0af70e64db10a0ffc304bc4c, type: 2}
   - {fileID: 11400000, guid: 59012eaa7ce91a743aff8eaab8d23934, type: 2}
   - {fileID: 11400000, guid: ec5efe58f42184d49b439c115c76eaf2, type: 2}
   - {fileID: 11400000, guid: 3d56ddfb8064dff4b8da9fe6b359447b, type: 2}
+  - {fileID: 11400000, guid: 940460e54730f41478daab8fb834b95d, type: 2}

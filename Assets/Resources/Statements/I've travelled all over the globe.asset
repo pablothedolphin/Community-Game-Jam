@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I've travelled all over the globe
   m_EditorClassIdentifier: 
-  likedBy: []
-  dislikedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: f29fe3652e90a0d4fbceda132767c16c, type: 2}
+  - {fileID: 11400000, guid: 64671e6cec02789469fca257ec44eabd, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: 7a34b89b4ea1d65478c39b0113d499a9, type: 2}
   - {fileID: 11400000, guid: fcff1dbcbecee2745934e3e9f5afff5f, type: 2}
   - {fileID: 11400000, guid: 0683dbf5ec56b5f48b7aee08ce8a3e3b, type: 2}
+  - {fileID: 11400000, guid: de07efb860441e94eb1b1f3ca4235526, type: 2}

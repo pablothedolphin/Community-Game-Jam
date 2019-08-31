@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: Tripple cheese pizza is the one thing I can't say no to
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy:
+  - {fileID: 11400000, guid: 8891dc5a059a8b54da5edeb2eacf90cb, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 9e0e273070dcd204ba089773a459147c, type: 2}
+  - {fileID: 11400000, guid: 537253dfd78ae2c42ab365b5fe3f8b15, type: 2}
+  contradictiveStatements:
+  - {fileID: 11400000, guid: deda0a375932819479b167f4852c20dd, type: 2}
+  - {fileID: 11400000, guid: d2a93d04537bf9b49bf0f0b0fe8a082e, type: 2}
