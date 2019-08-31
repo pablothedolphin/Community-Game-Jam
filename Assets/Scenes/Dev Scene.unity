@@ -1846,7 +1846,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: You (Chad). Lie your way into her heart <3
+  m_text: 'You (Chad).
+
+    Lie your way into her heart <3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -2028,8 +2030,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 671824396}
   m_HandleRect: {fileID: 671824395}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2238,9 +2240,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Here''s her LifeBook
-
-    profile'
+  m_text: Here's her LifeBook profile. Says what she's into.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -2310,12 +2310,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 717162179}
-    characterCount: 27
+    characterCount: 50
     spriteCount: 0
-    spaceCount: 3
-    wordCount: 4
+    spaceCount: 7
+    wordCount: 8
     linkCount: 0
-    lineCount: 2
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2530,8 +2530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -640.8, y: 317}
-  m_SizeDelta: {x: 571.9, y: 165.7}
+  m_AnchoredPosition: {x: -620.8, y: 317}
+  m_SizeDelta: {x: 611.8, y: 165.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &858171342
 MonoBehaviour:
@@ -2558,7 +2558,7 @@ MonoBehaviour:
 
     Full bar - you win!
 
-    Empty bar - she walks out..'
+    Empty bar - she walks out...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 858171342}
-    characterCount: 69
+    characterCount: 70
     spriteCount: 0
     spaceCount: 16
     wordCount: 16
@@ -4065,8 +4065,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1, y: 176.2}
-  m_SizeDelta: {x: 781.2, y: 55.5}
+  m_AnchoredPosition: {x: -0.000026703, y: 179}
+  m_SizeDelta: {x: 835.3, y: 55.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511907059
 MonoBehaviour:
@@ -4088,9 +4088,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'What you can say next. Choose wisely!
-
-    Don''t contradict yourself!'
+  m_text: What you can say next. Don't contradict yourself or she'll be like wtf.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -4136,7 +4134,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 38
+  m_firstOverflowCharacterIndex: 40
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -4160,10 +4158,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1511907059}
-    characterCount: 64
+    characterCount: 71
     spriteCount: 0
-    spaceCount: 9
-    wordCount: 10
+    spaceCount: 12
+    wordCount: 13
     linkCount: 0
     lineCount: 2
     pageCount: 1

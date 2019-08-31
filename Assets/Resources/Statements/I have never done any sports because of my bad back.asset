@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I have never done any sports because of my bad back
   m_EditorClassIdentifier: 
-  likedBy: []
-  dislikedBy: []
-  contradictiveStatements: []
+  likedBy:
+  - {fileID: 11400000, guid: 70968e4cc5681084e9f96b5839b847d0, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 537253dfd78ae2c42ab365b5fe3f8b15, type: 2}
+  contradictiveStatements:
+  - {fileID: 11400000, guid: 1036056d355e5d54583f86e3fdbf20b2, type: 2}
+  - {fileID: 11400000, guid: 9ef96679e2f2db8428c68f7f726c2012, type: 2}

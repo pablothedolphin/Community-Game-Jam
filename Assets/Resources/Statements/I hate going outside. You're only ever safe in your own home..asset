@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
+  m_Name: I hate going outside. You're only ever safe in your own home.
+  m_EditorClassIdentifier: 
+  likedBy:
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 8891dc5a059a8b54da5edeb2eacf90cb, type: 2}
+  - {fileID: 11400000, guid: f29fe3652e90a0d4fbceda132767c16c, type: 2}
+  - {fileID: 11400000, guid: 8891dc5a059a8b54da5edeb2eacf90cb, type: 2}
+  contradictiveStatements:
+  - {fileID: 11400000, guid: 7e764a1d4daf3c44a89c26d50333e589, type: 2}
+  - {fileID: 11400000, guid: bbedb52dd3b80024dbba9bf6d7d104c1, type: 2}
+  - {fileID: 11400000, guid: 5bffd5a4dbce53a4f8b6900a9b5d5ab0, type: 2}
+  - {fileID: 11400000, guid: 86dc75e0c7a81fe419ad90b719141236, type: 2}
+  - {fileID: 11400000, guid: 7a34b89b4ea1d65478c39b0113d499a9, type: 2}
