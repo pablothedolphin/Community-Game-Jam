@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: My dream is to be a father of 12
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
+  likedBy: []
+  dislikedBy: []
   contradictiveStatements:
-  - {fileID: 0}
-  supportingStatements: []
+  - {fileID: 11400000, guid: e6146e7530428c245988fca80758596c, type: 2}

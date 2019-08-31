@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I went out looking for alients and got abducted by some
   m_EditorClassIdentifier: 
-  impressiveness: 0
   likedBy: []
   dislikedBy: []
   contradictiveStatements:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 44acaf27ac905e14090e9aa7d945884a, type: 2}

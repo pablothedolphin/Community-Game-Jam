@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I'm a school teacher
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags: []
+  likedBy: []
+  dislikedBy: []
   contradictiveStatements:
-  - {fileID: 0}
-  supportingStatements: []
+  - {fileID: 11400000, guid: 48034979e33c5ab49b81c3b6e9d2a14f, type: 2}
+  - {fileID: 11400000, guid: e6146e7530428c245988fca80758596c, type: 2}
+  - {fileID: 11400000, guid: 7a6bc4bb94c372d4a96fac3f4c7c70e4, type: 2}

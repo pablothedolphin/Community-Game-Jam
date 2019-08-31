@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: My family was always stupidly rich
   m_EditorClassIdentifier: 
   likedBy:
-  - {fileID: 11400000, guid: fa2fc636a1ac2ba44a0eda2e59810ba0, type: 2}
-  dislikedBy:
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
   - {fileID: 11400000, guid: 64671e6cec02789469fca257ec44eabd, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
   contradictiveStatements:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 8997a867bf08700449ddf8bd740222a1, type: 2}
+  - {fileID: 11400000, guid: 53e7dc2e63e446d4297a774419e82328, type: 2}
