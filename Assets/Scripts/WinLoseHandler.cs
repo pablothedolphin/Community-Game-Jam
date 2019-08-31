@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WinLoseHandler : MonoBehaviour
 {
+	public GameObject winloseScreen;
 	public GameObject winScreen;
 	public GameObject loseScreen;
 
@@ -23,6 +24,7 @@ public class WinLoseHandler : MonoBehaviour
 
 	public void Win ()
 	{
+		winloseScreen.SetActive (true);
 		winScreen.SetActive (true);
 		chad.SetTrigger ("Win");
 		jenny.SetTrigger ("Win");
@@ -31,6 +33,7 @@ public class WinLoseHandler : MonoBehaviour
 
 	public void Lose ()
 	{
+		winloseScreen.SetActive (true);
 		loseScreen.SetActive (true);
 		jenny.SetTrigger ("Lose");
 		source.PlayOneShot (loseSound);

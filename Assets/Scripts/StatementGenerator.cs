@@ -15,6 +15,8 @@ public class StatementGenerator : MonoBehaviour
 	public AppEvent onDislike;
 	public AppEvent onLike;
 	public AppEvent onTimeTooLong;
+	public AppEvent onWin;
+	public AppEvent onLose;
 
 	public Tag[] allTypeAs;
 	public Tag[] allTypeBs;
@@ -33,11 +35,15 @@ public class StatementGenerator : MonoBehaviour
 	public Animator loveHeart;
 	public Transform timeLossPrefab;
 
+	public AudioSource music;
+
 	List<Statement> allStatements;
     List<Statement> usedStatements;
 
     Statement[] statementOptions;
 	StatementUI[] statementButtons;
+
+	bool gameEnded = false;
 
     // Start is called before the first frame update
     void Start()
@@ -87,7 +93,11 @@ public class StatementGenerator : MonoBehaviour
 		{
 			StopAllCoroutines ();
 
-			// lose
+			StopAllCoroutines ();
+			optionsRoot.DestroyChildren ();
+			music.Stop ();
+			onLose.RaiseEvent ();
+			gameEnded = true;
 
 			return;
 		}
@@ -129,6 +139,7 @@ public class StatementGenerator : MonoBehaviour
 
 		AssessResponse (statementOptions[index], index);
 
+
 		Transform selectedOption = optionsRoot.GetChild (index);
 
 		selectedOption.SetParent (usedOptionsRoot);
@@ -137,7 +148,11 @@ public class StatementGenerator : MonoBehaviour
         usedStatements.Add (statementOptions[index]);
 
 		StopAllCoroutines ();
+
+		if (gameEnded) return;
+
 		ResetOptions ();
+
     }
 
 	private void AssessResponse (Statement statement, int index)
@@ -211,12 +226,18 @@ public class StatementGenerator : MonoBehaviour
 		if (loveBar.fillAmount >= 1)
 		{
 			StopAllCoroutines ();
-			// win
+			optionsRoot.DestroyChildren ();
+			music.Stop ();
+			onWin.RaiseEvent ();
+			gameEnded = true;
 		}
 		else if (loveBar.fillAmount <= 0)
 		{
 			StopAllCoroutines ();
-			// lose
+			optionsRoot.DestroyChildren ();
+			music.Stop ();
+			onLose.RaiseEvent ();
+			gameEnded = true;
 		}
 	}
 }

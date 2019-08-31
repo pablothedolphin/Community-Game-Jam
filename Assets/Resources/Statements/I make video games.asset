@@ -18,8 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 70968e4cc5681084e9f96b5839b847d0, type: 2}
   dislikedBy:
   - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
-  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
-  - {fileID: 11400000, guid: 537253dfd78ae2c42ab365b5fe3f8b15, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: d8686412a7a406c49a0f323ebdba4556, type: 2}
   - {fileID: 11400000, guid: cdf7df8ab746ef04586e1a37b5ff0b2b, type: 2}
