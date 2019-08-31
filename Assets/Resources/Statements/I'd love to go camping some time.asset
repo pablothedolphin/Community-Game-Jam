@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I'd love to go camping some time
   m_EditorClassIdentifier: 
-  likedBy: []
-  dislikedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: f29fe3652e90a0d4fbceda132767c16c, type: 2}
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
+  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
+  - {fileID: 11400000, guid: 537253dfd78ae2c42ab365b5fe3f8b15, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 4a92f82d2d482994aa903ff822c52cc7, type: 2}
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
+  - {fileID: 11400000, guid: 9e0e273070dcd204ba089773a459147c, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: fcff1dbcbecee2745934e3e9f5afff5f, type: 2}
   - {fileID: 11400000, guid: e941e0df554f77a4f8baf69124636e68, type: 2}

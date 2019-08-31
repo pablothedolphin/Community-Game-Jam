@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 121.14997, y: 29.300003}
-  m_SizeDelta: {x: 302.3, y: 58.6}
+  m_AnchoredPosition: {x: 109.90007, y: 43.950012}
+  m_SizeDelta: {x: 264.1, y: 58.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4118707
 MonoBehaviour:
@@ -959,8 +959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 121.15, y: -34.65001}
-  m_SizeDelta: {x: 302.3, y: 69.3}
+  m_AnchoredPosition: {x: 109.90001, y: -20}
+  m_SizeDelta: {x: 264.1, y: 69.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &253697793
 MonoBehaviour:
@@ -1566,8 +1566,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 483.9, y: 0}
+  m_AnchoredPosition: {x: 0, y: -123.950005}
+  m_SizeDelta: {x: 483.9, y: -247.9}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &371830176
 MonoBehaviour:
@@ -1846,9 +1846,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'You (Chad).
-
-    Lie your way into her heart <3'
+  m_text: You (Chad)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -1918,12 +1916,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 525786207}
-    characterCount: 42
+    characterCount: 10
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 9
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
-    lineCount: 3
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2217,8 +2215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 511, y: 348}
-  m_SizeDelta: {x: 445.7, y: 170.4}
+  m_AnchoredPosition: {x: 354.8, y: 411}
+  m_SizeDelta: {x: 234.3, y: 170.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717162179
 MonoBehaviour:
@@ -2240,7 +2238,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Here's her LifeBook profile. Says what she's into.
+  m_text: 'Here''s her
+
+    profile'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -2276,7 +2276,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 513
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -2310,12 +2310,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 717162179}
-    characterCount: 50
+    characterCount: 18
     spriteCount: 0
-    spaceCount: 7
-    wordCount: 8
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -2530,8 +2530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -620.8, y: 317}
-  m_SizeDelta: {x: 611.8, y: 165.7}
+  m_AnchoredPosition: {x: -620.8, y: 358.5}
+  m_SizeDelta: {x: 611.8, y: 82.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &858171342
 MonoBehaviour:
@@ -2553,12 +2553,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'How into you she is:
-
-
-    Full bar - you win!
-
-    Empty bar - she walks out...'
+  m_text: How much she's into you
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -2628,12 +2623,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 858171342}
-    characterCount: 70
+    characterCount: 23
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 16
+    spaceCount: 4
+    wordCount: 5
     linkCount: 0
-    lineCount: 4
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -3312,8 +3307,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -711, y: -209}
-  m_SizeDelta: {x: 431.4, y: 165.7}
+  m_AnchoredPosition: {x: -794, y: -223.2}
+  m_SizeDelta: {x: 297.8, y: 137.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139550899
 MonoBehaviour:
@@ -3335,7 +3330,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Time left to decide what to say. Don't let it be awkward!
+  m_text: Awkward silence timer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -3371,7 +3366,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 513
+  m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -3405,12 +3400,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1139550899}
-    characterCount: 57
+    characterCount: 21
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 12
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 3
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -3952,11 +3947,11 @@ RectTransform:
   m_Father: {fileID: 1291626633}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -43}
-  m_SizeDelta: {x: 544.6, y: 276.4}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 483.9, y: 247.9}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1492683507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4065,8 +4060,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000026703, y: 179}
-  m_SizeDelta: {x: 835.3, y: 55.5}
+  m_AnchoredPosition: {x: -0.43906, y: 199}
+  m_SizeDelta: {x: 1031.2, y: 55.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1511907059
 MonoBehaviour:
@@ -4088,7 +4083,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: What you can say next. Don't contradict yourself or she'll be like WTF.
+  m_text: 'What lie will you tell next?
+
+    Don''t contradict yourself or she''ll be like WTF.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -4134,7 +4131,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 40
+  m_firstOverflowCharacterIndex: 29
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -4158,10 +4155,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1511907059}
-    characterCount: 71
+    characterCount: 77
     spriteCount: 0
-    spaceCount: 12
-    wordCount: 13
+    spaceCount: 13
+    wordCount: 14
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -4353,7 +4350,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Your date with a randomised personality
+  m_text: 'Your speed
+
+    dating partner'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bc3999465047dc146b8f1c5d2195de63, type: 2}
   m_sharedMaterial: {fileID: -1297667191428194397, guid: bc3999465047dc146b8f1c5d2195de63,
@@ -4423,10 +4422,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1583068758}
-    characterCount: 39
+    characterCount: 25
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 6
+    spaceCount: 3
+    wordCount: 4
     linkCount: 0
     lineCount: 2
     pageCount: 1

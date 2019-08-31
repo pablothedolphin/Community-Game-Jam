@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I was ALWAYS picked last for sports, no exceptions
   m_EditorClassIdentifier: 
-  likedBy: []
-  dislikedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: 4a92f82d2d482994aa903ff822c52cc7, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 70968e4cc5681084e9f96b5839b847d0, type: 2}
+  - {fileID: 11400000, guid: 537253dfd78ae2c42ab365b5fe3f8b15, type: 2}
+  - {fileID: 11400000, guid: f29fe3652e90a0d4fbceda132767c16c, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: a3c682e44b5c64a4f88de9cbbb2e0c97, type: 2}
+  - {fileID: 11400000, guid: b46bbf0626dfb7548af811feaef051c4, type: 2}

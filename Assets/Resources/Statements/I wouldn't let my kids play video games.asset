@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I wouldn't let my kids play video games
   m_EditorClassIdentifier: 
-  likedBy: []
-  dislikedBy: []
+  likedBy:
+  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
+  dislikedBy:
+  - {fileID: 11400000, guid: 4a92f82d2d482994aa903ff822c52cc7, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: dbccaa00a2fe37d4193765bd79b78726, type: 2}
   - {fileID: 11400000, guid: 6b40910638f8b5f46a1cc82849173c75, type: 2}
+  - {fileID: 11400000, guid: e6146e7530428c245988fca80758596c, type: 2}

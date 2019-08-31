@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a637ec9b34c3847488667ae548241a6e, type: 3}
   m_Name: I'm Vegan
   m_EditorClassIdentifier: 
-  impressiveness: 0
-  tags:
-  - {fileID: 11400000, guid: 941b62a465507f04284655f64c670ea9, type: 2}
-  - {fileID: 11400000, guid: 07428bba084a31b45bf1fe8e56e9754b, type: 2}
-  contradictiveStatements: []
-  supportingStatements: []
+  likedBy: []
+  dislikedBy: []
+  contradictiveStatements:
+  - {fileID: 11400000, guid: 6dccc5f3c5dbefe4c84c9f296f70eab7, type: 2}
+  - {fileID: 11400000, guid: be8f5eea06e8334408d1ff6e4097cfbe, type: 2}

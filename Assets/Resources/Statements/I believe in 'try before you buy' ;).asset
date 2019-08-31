@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: I believe in 'try before you buy' ;)
   m_EditorClassIdentifier: 
   likedBy: []
-  dislikedBy: []
+  dislikedBy:
+  - {fileID: 11400000, guid: cb647b93cb2d9cd48836dc19b7c2193b, type: 2}
   contradictiveStatements:
   - {fileID: 11400000, guid: 07b2f21445a940842b8d2ef64f0e5fe7, type: 2}
   - {fileID: 11400000, guid: cbe7e5a317c48e745a58bb12309816c6, type: 2}
